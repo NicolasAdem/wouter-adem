@@ -525,3 +525,122 @@ h2 {
     }
     
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        padding: 1.5rem;
+    }
+
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-image img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .nav-link {
+        padding: 0.5rem 1rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 6px;
+        text-align: center;
+        width: calc(50% - 0.5rem);
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .intro {
+        font-size: 1.1rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .key-info {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .key-info div {
+        width: calc(50% - 0.5rem);
+        text-align: center;
+    }
+
+    .contact-details {
+        text-align: center;
+    }
+
+    .contact-link {
+        justify-content: center;
+    }
+
+    .schedule-btn {
+        max-width: 300px;
+        margin: 1rem auto;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .nav-link {
+        width: 100%;
+    }
+
+    .key-info div {
+        width: 100%;
+    }
+
+    .main-content {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .service-card {
+        padding: 1rem;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 0.75rem;
+    }
+}
